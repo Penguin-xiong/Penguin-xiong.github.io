@@ -6,17 +6,17 @@ i.style.fontFamily = 'Courier New'
 
 // Time of Day
 const hours = new Date().getHours() 
-/*
-const morning = hours >= 4 && hours<12
-const afternoon = hours >= 12 && hours < 17 
-const evening = hours >= 17 || hours < 4 
-*/
 
-if ( hours >= 4 && hours<12 ) {
+const morning = hours >= 4 && hours<12
+const afternoon = hours >= 12 && hours < 17
+
+
+if (morning) {
     const hi = document.getElementById( 'welcome' )
     hi.textContent = "Good Morning"
+    
 }
-else if ( hours >= 12 && hours < 17  ) {
+else if (afternoon) {
     const hi = document.getElementById( 'welcome' )
     hi.textContent = "Good Afternoon"
 }
