@@ -24,3 +24,7 @@ else {
     const hi = document.getElementById( 'welcome' )
     hi.textContent = "Good Evening"
 }
+
+// It's a secret to everybody.
+
+localStorage.setItem('It\'s a secret to everybody.', 'Even Google does not know what ur hiding in ur bathroom')

@@ -1,21 +1,31 @@
-body{
-    background-color: darkcyan;
-}
+
+/*  #ID  */
 #wrapper{
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, 0.918);
+}
+#welcome{
+    padding-left: 1em;
+}
+/*  .Class  */
+
+/*  elements, tags  */
+body{
+    background-image: url("img/web.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div{
+    color: green;
+    border: 1em;
+    font-family: Courier New;
 }
 img{
     width:33%;
     float: left;
     margin: 1em;
-}
-div{
-    color: green;
-    padding-left: 1em;
-    font-family: Courier New;
 }
 h1{
     text-align: center;
@@ -23,10 +33,14 @@ h1{
     padding-top: .5em;
     padding-bottom: .5em;
     background-color: rgb(43, 228, 166);
+    width: 100%;
 }
 h2{
     margin-left:1em;
     font-family: 'Courier New', Courier, monospace;
+}
+h4{
+    text-align: center;
 }
 p{
     font-family: 'Courier New', Courier, monospace;
