@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(14, 2, 31) ;
+}
+/*  class  */
+.head{
+    width: 100%;
+    margin:auto;
+}
+/*  ID  */
+#wrapper {
+    width: 1000px;
+    height: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: bisque;
+    padding: 20px;
+}
+/*  tags  */
+h1{
+    text-align: center;
+}
+
+/*  Carousel  */
+
+#carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+#carousel img {
+    max-height: 300px;
+    aspect-ratio: auto 300 / 400;
+    border-radius: 10px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
