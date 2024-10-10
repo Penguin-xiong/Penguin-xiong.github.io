@@ -23,20 +23,18 @@ showImages()
 const btnNext = document.querySelector('#next')
 btnNext.addEventListener('click', () => { 
     currentImage++;
-    currentImage %= urls.length; 
     showImages();
      console.log('Next Button clicked') });
 
 const preBtn = document.querySelector('#prev')
 preBtn.addEventListener('click', () => {
     currentImage--;
-    currentImage %= urls.length; 
     showImages();
     console.log('Previous Button clicked')} );
 
 //  times that add +1 every 5 seconds 
     setInterval(() => {
         currentImage++;
-        currentImage %= urls.length; 
         showImages();
     }, 5000)
+    
