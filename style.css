@@ -3,6 +3,7 @@ body {
 }
 /*  .Class  */
 .head {
+  height: 300px;
   width: 99%;
   border-style: solid;
   border-color: rgb(232, 200, 178);
