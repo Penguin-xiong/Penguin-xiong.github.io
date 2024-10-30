@@ -1,30 +1,11 @@
-const i = document.querySelector('h3')
-i.textContent = new Date()
-i.style.color = 'green'
-i.style.paddingLeft = '1em'
-i.style.fontFamily = 'Courier New'
+const compareAge = (a, b) => (a.age === b.age ? 0 : a.age > b.age ? 1 : -1);
+const compareName = (a, b) => a.name.localeCompare(b.name);
+const compareType = (a, b) => a.type.localeCompare(b.type);
 
-// Time of Day
-const hours = new Date().getHours() 
+//console.log(pets.toSorted(compareAge))
+console.log([...pets].sort(compareAge)); // this is the same as the line above
+console.log(pets);
 
-const morning = hours >= 4 && hours<12
-const afternoon = hours >= 12 && hours < 17
-
-
-if (morning) {
-    const hi = document.getElementById( 'welcome' )
-    hi.textContent = "Good Morning"
-    
-}
-else if (afternoon) {
-    const hi = document.getElementById( 'welcome' )
-    hi.textContent = "Good Afternoon"
-}
-else { 
-    const hi = document.getElementById( 'welcome' )
-    hi.textContent = "Good Evening"
-}
-
-// It's a secret to everybody.
-
-localStorage.setItem('It\'s a secret to everybody.', 'Even Google does not know what ur hiding in ur bathroom')
+//const sorted = pets.sort(compareName)
+const sorted = pets.sort(compareType);
+console.log(sorted);

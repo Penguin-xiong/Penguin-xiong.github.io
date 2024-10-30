@@ -1,0 +1,97 @@
+body {
+  background-color: rgb(4, 75, 4);
+}
+/*  .Class  */
+.head {
+  width: 99%;
+  border-style: solid;
+  border-color: rgb(232, 200, 178);
+  border-width: 5px;
+}
+.photo {
+  width: 33%;
+  float: left;
+  margin-right: 1em;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+/*   column classes   */
+.column {
+  float: left;
+  height: 700px;
+  border-style: solid;
+  border-color: rgb(195, 163, 143);
+  background-color: rgb(232, 200, 178);
+}
+.left {
+  width: 200px;
+  border-width: 2px;
+}
+.main {
+  width: 800px;
+  border-width: 2px;
+}
+.half {
+  width: 398px;
+  border-width: 2px;
+}
+/*   #ID   */
+#wrapper {
+  /* +8px to width for column border */
+  width: 1008px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(232, 200, 178);
+}
+/*  Text Decoration tags  */
+h1 {
+  text-align: center;
+  color: rgb(171, 129, 75);
+}
+h2 {
+  text-align: center;
+  color: rgb(166, 119, 57);
+}
+p {
+  margin-left: 1em;
+  color: rgb(128, 88, 35);
+  margin-right: 2em;
+  line-height: 1.5em;
+  font-family: tahoma, verdana;
+}
+/*  tags  a-z  */
+a {
+  color: purple;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+a:visited {
+  color: rgb(160, 119, 199);
+}
+a:hover {
+  color: rgb(176, 87, 87);
+}
+fieldset {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  width: 988px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(232, 200, 178);
+  color: rgb(106, 76, 56);
+  padding: 10px;
+}
+li {
+  list-style-type: none;
+  margin-top: 2em;
+}
+.vid {
+  width: 550px;
+  height: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
