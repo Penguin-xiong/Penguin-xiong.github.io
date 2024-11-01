@@ -58,6 +58,10 @@ h2 {
   text-align: center;
   color: rgb(166, 119, 57);
 }
+h3 {
+  text-align: center;
+  color: rgb(166, 119, 57);
+}
 p {
   margin-left: 1em;
   color: rgb(128, 88, 35);
@@ -89,6 +93,9 @@ footer {
   background-color: rgb(232, 200, 178);
   color: rgb(106, 76, 56);
   padding: 10px;
+}
+input {
+  margin: 2em;
 }
 li {
   list-style-type: none;
