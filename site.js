@@ -55,3 +55,13 @@ addButton.addEventListener("click", () => {
   input.value = "";
   renderList();
 });
+
+//    P o k e m o n   A P I
+/*
+const img = document.createElement("img");
+img.src = // url of the image from the 'front_default' property
+  img.alt = parentElement.append(img); // name of the pokemon loop
+
+const url =
+  "https://pokeapi.co/api/v2/pokemon/" + Math.floor(Math.random() * 150);
+*/

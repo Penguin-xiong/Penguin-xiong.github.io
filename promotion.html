@@ -43,12 +43,30 @@
           <!--  section aside  -->
           <section>
             <aside>
-              <h2>Events</h2>
-              <p>
-                paragraph
-                <br />
-                paragraph
-              </p>
+              <h2>Pokemon API</h2>
+              <div id="pokemon-container"></div>
+              <script>
+                //    P o k e m o n   A P I
+                const getRandomPokemon = async () => {
+                  const pokemonId = Math.floor(Math.random() * 151); // Adjust the range as needed
+                  const url = `https://pokeapi.co/api/v2/pokemon/${pokemonId}`;
+                  const response = await fetch(url);
+                  const pokemonData = await response.json();
+                  return pokemonData;
+                };
+
+                const renderPokemon = (pokemonData) => {
+                  const pokemonImage = document.createElement("img");
+                  pokemonImage.src = pokemonData.sprites.front_default;
+                  pokemonImage.alt = pokemonData.name;
+
+                  const pokemonContainer =
+                    document.getElementById("pokemon-container");
+                  pokemonContainer.appendChild(pokemonImage);
+                };
+
+                getRandomPokemon().then(renderPokemon);
+              </script>
             </aside>
           </section>
         </div>

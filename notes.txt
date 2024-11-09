@@ -1,0 +1,40 @@
+Fetching a Random Pokemon:
+
+getRandomPokemon is an asynchronous function that:
+Picks a random number between 1 and 151.
+Creates a URL to fetch a Pokemon with that ID from the PokeAPI.
+Fetches the data from the API.
+Parses the JSON response and returns the Pokemon data.
+Displaying the Pokemon:
+
+renderPokemon is a function that:
+Takes the Pokemon data as input.
+Creates an image element.
+Sets the image source to the Pokemon's front sprite URL.
+Sets the image's alternative text to the Pokemon's name.
+Appends the image to the HTML element with the ID "pokemon-container".
+Putting It Together:
+
+The getRandomPokemon function is called.
+Once the Pokemon data is fetched, it's passed to the renderPokemon function.
+The renderPokemon function displays the Pokemon image on the page.
+In simpler terms:
+
+We ask the PokeAPI for a random Pokemon.
+We get the information about that Pokemon.
+We display a picture of that Pokemon on the webpage.
+That's essentially what the code does. It's a great example of how to fetch data from an API and display it on a webpage using JavaScript.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
